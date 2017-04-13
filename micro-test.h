@@ -17,6 +17,12 @@
 // | Macros |
 // +--------+
 
+#ifdef NDEBUG
+#define __TESTING__ 0
+#else
+#define __TESTING__ 1
+#endif
+
 #define CHECK_EQUAL_INT(EXPECTED, ACTUAL) \
   do \
     { \
