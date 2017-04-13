@@ -38,12 +38,13 @@ struct TYPED(Stack)
 // | Procedures |
 // +------------+
 
-void 
+TYPED(Stack)
 TYPED(stack_new) (void)
 {
   struct TYPED(Stack) *new_stack = (struct TYPED(Stack) *) malloc (sizeof (struct TYPED(Stack)));
   new_stack->size = 0;
   new_stack->top = NULL;
+  return new_stack;
 } // stack_new
 
 

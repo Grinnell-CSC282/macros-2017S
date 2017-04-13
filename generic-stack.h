@@ -31,7 +31,7 @@ typedef struct TYPED(Stack) TYPED(Stack);
 /**
  * Create a new stack.
  */
-void TYPED(stack_new) (void);
+TYPED(Stack) *TYPED(stack_new) (void);
 
 /**
  * Free the space allocated to a stack.
